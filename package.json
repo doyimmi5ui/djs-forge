@@ -1,0 +1,48 @@
+{
+  "name": "cordx",
+  "version": "1.0.0",
+  "description": "Extension library for discord.js — covers missing Discord API features, better error handling and extra utilities.",
+  "main": "./src/index.cjs",
+  "module": "./src/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./src/index.cjs",
+      "import": "./src/index.mjs",
+      "default": "./src/index.cjs"
+    }
+  },
+  "files": [
+    "src",
+    "docs",
+    "README.md",
+    ".npmrc"
+  ],
+  "keywords": [
+    "discord",
+    "discordjs",
+    "discord.js",
+    "bot",
+    "soundboard",
+    "polls",
+    "monetization",
+    "entitlements",
+    "onboarding",
+    "cordx"
+  ],
+  "author": "cordx contributors",
+  "license": "MIT",
+  "peerDependencies": {
+    "discord.js": ">=14.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youruser/cordx.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

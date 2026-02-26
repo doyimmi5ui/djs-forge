@@ -1,19 +1,46 @@
 {
-  "name": "cordx",
+  "name": "djs-forge",
   "version": "1.0.0",
-  "description": "Extension library for discord.js — covers missing Discord API features, better error handling and extra utilities.",
+  "description": "The missing toolkit for discord.js — Interaction routing, pagination, cooldowns, confirmations, embed presets, webhooks and full Discord API coverage.",
   "main": "./src/index.cjs",
   "module": "./src/index.mjs",
+  "types": "./src/types/index.d.ts",
   "exports": {
     ".": {
       "require": "./src/index.cjs",
       "import": "./src/index.mjs",
+      "types": "./src/types/index.d.ts",
       "default": "./src/index.cjs"
+    },
+    "./routing": {
+      "require": "./src/routing/InteractionRouter.cjs",
+      "import": "./src/routing/InteractionRouter.mjs"
+    },
+    "./pagination": {
+      "require": "./src/pagination/Paginator.cjs",
+      "import": "./src/pagination/Paginator.mjs"
+    },
+    "./cooldowns": {
+      "require": "./src/cooldowns/CooldownManager.cjs",
+      "import": "./src/cooldowns/CooldownManager.mjs"
+    },
+    "./confirmations": {
+      "require": "./src/confirmations/ConfirmationManager.cjs",
+      "import": "./src/confirmations/ConfirmationManager.mjs"
+    },
+    "./webhooks": {
+      "require": "./src/webhooks/WebhookManager.cjs",
+      "import": "./src/webhooks/WebhookManager.mjs"
+    },
+    "./utils": {
+      "require": "./src/utils/index.cjs",
+      "import": "./src/utils/index.mjs"
     }
   },
   "files": [
     "src",
     "docs",
+    "examples",
     "README.md",
     ".npmrc"
   ],
@@ -22,14 +49,20 @@
     "discordjs",
     "discord.js",
     "bot",
+    "interaction-router",
+    "pagination",
+    "cooldown",
+    "confirmation",
+    "embed",
+    "utilities",
     "soundboard",
     "polls",
     "monetization",
-    "entitlements",
     "onboarding",
-    "cordx"
+    "webhook",
+    "djs-forge"
   ],
-  "author": "cordx contributors",
+  "author": "djs-forge contributors",
   "license": "MIT",
   "peerDependencies": {
     "discord.js": ">=14.0.0"
@@ -39,7 +72,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/youruser/cordx.git"
+    "url": "git+https://github.com/doyimmi5ui/cordx.git"
   },
   "publishConfig": {
     "access": "public",

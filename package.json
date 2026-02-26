@@ -72,7 +72,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doyimmi5ui/cordx.git"
+    "url": "git+https://github.com/doyimmi5ui/djs-forge.git"
   },
   "publishConfig": {
     "access": "public",
